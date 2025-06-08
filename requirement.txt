@@ -1,7 +1,0 @@
-streamlit
-pandas
-scikit-learn
-joblib
-openpyxl  # Needed to read .xlsx files
-numpy
-
