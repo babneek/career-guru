@@ -1,17 +1,15 @@
 import streamlit as st
-import pickle
 import numpy as np
+import joblib
 
-# Load the model and encoders
 @st.cache_resource
 def load_model_and_encoders():
-    with open('model/model.pkl', 'rb') as f:
-        model = pickle.load(f)
-    with open('model/skill_encoder.pkl', 'rb') as f:
-        le_skill = pickle.load(f)
-    with open('model/career_encoder.pkl', 'rb') as f:
-        le_career = pickle.load(f)
+    model = joblib.load("model/model.pkl")
+    le_skill = joblib.load("model/skill_encoder.pkl")
+    le_career = joblib.load("model/career_encoder.pkl")
     return model, le_skill, le_career
+
+
 
 model, le_skill, le_career = load_model_and_encoders()
 
