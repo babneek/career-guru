@@ -12,18 +12,14 @@ Simple and intuitive UI for user interaction
 
 🧠 Tech Stack
 Python, Pandas, NumPy
-
 scikit-learn
-
 Streamlit
-
 joblib
 
 💻 How to Run
 Clone the repository:
 
 bash
-Copy code
 git clone https://github.com/babneek/career-guru.git
 Install dependencies:
 
