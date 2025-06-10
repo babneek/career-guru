@@ -24,21 +24,18 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/career-guru.git
+git clone https://github.com/babneek/career-guru.git
 Install dependencies:
 
 bash
-Copy code
 pip install -r requirements.txt
 Run the app:
 
 bash
-Copy code
 streamlit run app.py
 
 📁 Folder Structure
-kotlin
-Copy code
+
 career-guru/
 ├── app.py
 ├── model/
