@@ -14,7 +14,7 @@ Career Guru is a machine learning– and LLM-powered career recommendation syste
 
 ## 🚀 Features
 - Predicts career options based on user-entered skills using a trained ML model
-- **NEW:** Suggests career options using the Mistral LLM API for more creative, generative recommendations
+- **NEW:** Suggests career options using the Mistral LLM via OpenRouter API for more creative, generative recommendations
 - Uses Label Encoding and a classification model for prediction
 - Interactive frontend built using Streamlit
 - Simple and intuitive UI for user interaction
@@ -26,7 +26,7 @@ Career Guru is a machine learning– and LLM-powered career recommendation syste
 - scikit-learn
 - Streamlit
 - joblib
-- **Mistral LLM API**
+- **OpenRouter API (Mistral LLM)**
 - requests, python-dotenv
 
 ---
@@ -44,10 +44,10 @@ cd career-guru
 pip install -r requirements.txt
 ```
 
-### 3. Set up your Mistral API key
+### 3. Set up your OpenRouter API key
 Create a `.env` file in the project root:
 ```
-MISTRAL_API_KEY=your_mistral_api_key_here
+MISTRAL_API_KEY=sk-or-v1-your_openrouter_key_here
 ```
 
 ### 4. Run the app
@@ -60,9 +60,9 @@ The app will open in your browser at `http://localhost:8501`.
 
 ## ☁️ Deploying on Streamlit Cloud
 1. Go to your app's settings on Streamlit Cloud.
-2. Add your Mistral API key in the **Secrets** section:
+2. Add your OpenRouter API key in the **Secrets** section:
    ```
-   MISTRAL_API_KEY = your_mistral_api_key_here
+   MISTRAL_API_KEY = "sk-or-v1-your_openrouter_key_here"
    ```
 3. Deploy your app as usual.
 
@@ -70,9 +70,8 @@ The app will open in your browser at `http://localhost:8501`.
 
 ## 🧩 How to Use
 1. Enter your skill in the web app.
-2. Click **Get ML Recommendation** to see model-based career options.
-3. Click **Get LLM Recommendation (Mistral)** to get creative suggestions from the Mistral LLM.
-4. Explore the suggestions and plan your career path!
+2. Click **Search** to see both model-based and LLM-based career options.
+3. Explore the suggestions and plan your career path!
 
 ---
 
@@ -105,4 +104,4 @@ This project is licensed under the MIT License.
 ## 🙏 Acknowledgements
 - [Streamlit](https://streamlit.io/) for the web app framework
 - [Python](https://www.python.org/) for the programming language
-- [Mistral AI](https://mistral.ai/) for the LLM API
+- [OpenRouter](https://openrouter.ai/) for LLM API access
